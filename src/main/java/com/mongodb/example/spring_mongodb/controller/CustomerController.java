@@ -18,12 +18,14 @@ public class CustomerController {
     @PostMapping("/addCustomer")
     public String addCustomer(@RequestBody Customer customer){
         customerRepository.save(customer);
+        System.out.println("--------------------------------");
         return "Customer Saved Successfully";
     }
 
     @GetMapping("/findCustomer/{customerId}")
     public Customer findCustomerById(@PathVariable("customerId") int id){
         Optional<Customer> optionalCustomer = customerRepository.findById(id);
+        System.out.println("**************************************************");
         return optionalCustomer.get();
     }
 
@@ -36,6 +38,7 @@ public class CustomerController {
     @DeleteMapping("/deleteCustomer/{customerId}")
     public String deleteCustomer(@PathVariable("customerId") int id){
         customerRepository.deleteById(id);
+        System.out.println("--------------------------------");
         return "Customer with id "+id+" got deleted successfully";
     }
 }
