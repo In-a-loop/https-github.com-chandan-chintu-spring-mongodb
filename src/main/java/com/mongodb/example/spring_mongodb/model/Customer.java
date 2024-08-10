@@ -18,5 +18,6 @@ public class Customer {
     private int age;
     private String email;
     private String mobile;
+    // System.out.println("--------------------------------");
 
 }
