@@ -21,7 +21,7 @@ public class CustomerController {
         System.out.println("--------------------------------");
         return "Customer Saved Successfully";
     }
-
+// made changes
     @GetMapping("/findCustomer/{customerId}")
     public Customer findCustomerById(@PathVariable("customerId") int id){
         Optional<Customer> optionalCustomer = customerRepository.findById(id);
@@ -34,6 +34,8 @@ public class CustomerController {
         List<Customer> customerList = customerRepository.findAll();
         return customerList;
     }
+	// made changes
+	// made changes
 // add dummy codes
 // add dummy codes
 // add dummy codes
