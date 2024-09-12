@@ -21,5 +21,9 @@ public class Customer {
     private String mobile;
     // System.out.println("--------------------------------");
 	// add some lines
+	
+	///isowsksm
+	//sjuwowo
+	
 
 }
