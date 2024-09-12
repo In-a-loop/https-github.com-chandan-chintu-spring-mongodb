@@ -11,12 +11,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @Document(collection = "customer")
 public class Customer {
-
+// made changes
 // add some lines
     @Id
     private int id;
     private String name;
     private int age;
+	// made changes
     private String email;
     private String mobile;
     // System.out.println("--------------------------------");
@@ -25,5 +26,6 @@ public class Customer {
 	///isowsksm
 	//sjuwowo
 	
+	// made changes
 
 }
