@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "customer")
 public class Customer {
 
+// add some lines
     @Id
     private int id;
     private String name;
@@ -19,5 +20,6 @@ public class Customer {
     private String email;
     private String mobile;
     // System.out.println("--------------------------------");
+	// add some lines
 
 }

@@ -28,17 +28,20 @@ public class CustomerController {
         System.out.println("**************************************************");
         return optionalCustomer.get();
     }
-
+// add dummy codes
     @GetMapping("/findAllCustomer")
     public List<Customer> findAllCustomer(){
         List<Customer> customerList = customerRepository.findAll();
         return customerList;
     }
-
+// add dummy codes
+// add dummy codes
+// add dummy codes
     @DeleteMapping("/deleteCustomer/{customerId}")
     public String deleteCustomer(@PathVariable("customerId") int id){
         customerRepository.deleteById(id);
         System.out.println("--------------------------------");
         return "Customer with id "+id+" got deleted successfully";
     }
+	// add dummy codes
 }
